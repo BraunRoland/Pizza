@@ -12,16 +12,22 @@
 			<ColumnDefinition Width="203*"/>
 			<ColumnDefinition Width="590*"/>
 		</Grid.ColumnDefinitions>
-		<ListBox x:Name="lb_teszta" d:ItemsSource="{d:SampleData ItemCount=3}" Margin="1,14,0,308" Grid.Column="1"/>
-		<ComboBox x:Name="cmb_meret" Margin="0,134,0,0" VerticalAlignment="Top" Height="22" Grid.Column="1" HorizontalAlignment="Center" Width="146"/>
-		<CheckBox x:Name="chb_sajt" Grid.Column="1" Content="Sajt" HorizontalAlignment="Center" Margin="0,175,0,0" VerticalAlignment="Top" Width="146" Height="15"/>
-		<CheckBox x:Name="chb_kukorica" Grid.Column="1" Content="Kukorica" HorizontalAlignment="Center" Margin="0,250,0,0" VerticalAlignment="Top" Width="146" Height="15"/>
-		<CheckBox x:Name="chb_oliva" Grid.Column="1" Content="Olívabogyó" HorizontalAlignment="Center" Margin="0,231,0,0" VerticalAlignment="Top" Width="146" Height="15"/>
-		<CheckBox x:Name="chb_gomba" Grid.Column="1" Content="Gomba" HorizontalAlignment="Center" Margin="0,213,0,0" VerticalAlignment="Top" Width="146" Height="15"/>
-		<CheckBox x:Name="chb_sonka" Grid.Column="1" Content="Sonka" HorizontalAlignment="Center" Margin="0,194,0,0" VerticalAlignment="Top" Width="146" Height="15"/>
-		<RadioButton x:Name ="rb_haz" Grid.Column="1" Content="Házhoz szállítás" HorizontalAlignment="Center" Margin="0,272,0,0" VerticalAlignment="Top" Width="146" Height="15"/>
-		<RadioButton x:Name="rb_szem" Grid.Column="1" Content="Személyes átvétel" HorizontalAlignment="Center" Margin="0,289,0,0" VerticalAlignment="Top" Width="146" Height="15"/>
-		<Button x:Name="btn_ossz" Grid.Column="1" Content="Rendelés leadása" HorizontalAlignment="Center" Margin="0,330,0,0" VerticalAlignment="Top" Width="152" Height="20"/>
+		<ListBox x:Name="lb_teszta" d:ItemsSource="{d:SampleData ItemCount=3}" Margin="1,19,0,330" Grid.Column="1"/>
+		<ComboBox x:Name="cmb_meret" Margin="21,107,0,0" VerticalAlignment="Top" Height="22" Grid.Column="1" HorizontalAlignment="Left" Width="146"/>
+		<CheckBox x:Name="chb_sajt" Grid.Column="1" Content="Sajt" HorizontalAlignment="Center" Margin="0,153,0,0" VerticalAlignment="Top" Width="146" Height="15"/>
+		<CheckBox x:Name="chb_kukorica" Grid.Column="1" Content="Kukorica" HorizontalAlignment="Center" Margin="0,228,0,0" VerticalAlignment="Top" Width="146" Height="15"/>
+		<CheckBox x:Name="chb_oliva" Grid.Column="1" Content="Olívabogyó" HorizontalAlignment="Center" VerticalAlignment="Top" Width="146" Height="15" Margin="0,213,0,0"/>
+		<CheckBox x:Name="chb_gomba" Grid.Column="1" Content="Gomba" HorizontalAlignment="Center" VerticalAlignment="Top" Width="146" Height="15" Margin="0,191,0,0"/>
+		<CheckBox x:Name="chb_sonka" Grid.Column="1" Content="Sonka" HorizontalAlignment="Center" Margin="0,172,0,0" VerticalAlignment="Top" Width="146" Height="15"/>
+		<RadioButton x:Name ="rb_haz" Grid.Column="1" Content="Házhoz szállítás" HorizontalAlignment="Center" Margin="0,271,0,0" VerticalAlignment="Top" Width="146" Height="15"/>
+		<RadioButton x:Name="rb_szem" Grid.Column="1" Content="Személyes átvétel" HorizontalAlignment="Center" Margin="0,288,0,0" VerticalAlignment="Top" Width="146" Height="15"/>
+		<Button x:Name="btn_ossz" Grid.Column="1" Content="Rendelés leadása" HorizontalAlignment="Center" Margin="0,320,0,0" VerticalAlignment="Top" Width="152" Height="20" Click="btn_ossz_Click"/>
+		<Label Grid.Column="1" Content="Tésztája:" HorizontalAlignment="Left" Margin="1,-3,0,0" VerticalAlignment="Top" Height="26" Width="54"/>
+		<Label Grid.Column="1" Content="Mérete:" HorizontalAlignment="Left" Margin="2,81,0,0" VerticalAlignment="Top" Height="26" Width="50"/>
+		<Label Grid.Column="1" Content="Feltételek:" HorizontalAlignment="Left" Margin="1,126,0,0" VerticalAlignment="Top" Height="26" Width="63"/>
+		<Label Grid.Column="1" Content="Átvétel:" HorizontalAlignment="Left" Margin="1,241,0,0" VerticalAlignment="Top" Height="26" Width="50"/>
+		<Label x:Name="lbl_ossz" Grid.Column="2" Content="" HorizontalAlignment="Left" Margin="11,-3,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="Black" Height="26" Width="10"/>
+		<TextBlock x:Name="txt_ossz" Grid.Column="2" HorizontalAlignment="Left" Height="221" Margin="16,25,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="274"/>
 
 	</Grid>
 </Window>
