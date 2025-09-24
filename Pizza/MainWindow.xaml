@@ -26,8 +26,9 @@
 		<Label Grid.Column="1" Content="Mérete:" HorizontalAlignment="Left" Margin="2,81,0,0" VerticalAlignment="Top" Height="26" Width="50"/>
 		<Label Grid.Column="1" Content="Feltételek:" HorizontalAlignment="Left" Margin="1,126,0,0" VerticalAlignment="Top" Height="26" Width="63"/>
 		<Label Grid.Column="1" Content="Átvétel:" HorizontalAlignment="Left" Margin="1,241,0,0" VerticalAlignment="Top" Height="26" Width="50"/>
-		<Label x:Name="lbl_ossz" Grid.Column="2" Content="" HorizontalAlignment="Left" Margin="11,-3,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="Black" Height="26" Width="10"/>
-		<TextBlock x:Name="txt_ossz" Grid.Column="2" HorizontalAlignment="Left" Height="221" Margin="16,25,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="274"/>
+		<Label x:Name="lbl_ossz" Grid.Column="2" Content="" HorizontalAlignment="Left" Margin="11,-3,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="Black" Height="26" Width="158"/>
+		<TextBlock x:Name="txt_ossz" Grid.Column="2" HorizontalAlignment="Left" Height="221" Margin="16,22,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="274"/>
+		<Button x:Name="btn_torl" Grid.Column="1" Content="Törlés" HorizontalAlignment="Center" Margin="0,353,0,0" VerticalAlignment="Top" Width="152" Height="20" Click="btn_torl_Click"/>
 
 	</Grid>
 </Window>

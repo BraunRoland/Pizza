@@ -76,5 +76,20 @@ namespace Pizza
 
             txt_ossz.Text = $"Tészta: {teszta}\nMéret: {meret}\nFeltétek: {feltetek}\nÁtvétel: {atvetel}";
 		}
-    }
+
+		private void btn_torl_Click(object sender, RoutedEventArgs e)
+		{
+            lb_teszta.UnselectAll();
+            cmb_meret.SelectedIndex = -1;
+            chb_sajt.IsChecked = false;
+            chb_sonka.IsChecked = false;
+            chb_gomba.IsChecked = false;
+            chb_kukorica.IsChecked = false;
+            chb_oliva.IsChecked = false;
+            rb_haz.IsChecked = false;
+            rb_szem.IsChecked = false;
+            txt_ossz.Text = "";
+            lbl_ossz.Content = "";
+		}
+	}
 }
